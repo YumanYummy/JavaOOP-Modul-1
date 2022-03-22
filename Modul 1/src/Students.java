@@ -35,7 +35,11 @@ class Student{
         if(Password.length() <= 8){
             System.out.println("Password Minimal 8 Karakter");
             System.out.print("Password : ");
+<<<<<<< HEAD
             Password = in.next(); 
+=======
+            Password = in.next();
+>>>>>>> fbbc4a89610433680cc47a79e4fdfc9b1ec7908f
             setPassword(Password);
         }else{
             this.Password = Password;
