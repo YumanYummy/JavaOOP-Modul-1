@@ -65,7 +65,7 @@ class Student{
         System.out.println("Selamat " + getMahasiswanama() + " Anda Berhasil Mendaftar \n" );
         System.out.println("Berikut Username Dan Password :");
         System.out.println("\nUsername : " + getMahasiswanim());
-        System.out.println("Password : " + getPassword());
+        System.out.println("Password : " + getPassword());  
     }
 }
 
