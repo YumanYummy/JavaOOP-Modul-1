@@ -6,10 +6,10 @@ class Pegawai{
     public String getNama() {
         return Nama;
     }
-
     public void setNama(String Nama) {
         this.Nama = Nama;
     }
+
 
     public String getJabatan() {
         return Jabatan;
