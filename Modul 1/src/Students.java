@@ -16,7 +16,7 @@ class Student{
     public void setMahasiswanim(String Mahasiswanim){
         if(Mahasiswanim.length() != 15){
             System.out.println("Nim Harus 15 Angka");
-            System.out.print("Nim : ");
+            System.out.print("Masukkan Nim Anda : ");
             Mahasiswanim = in.next();
             setMahasiswanim(Mahasiswanim);
         }else{
@@ -34,42 +34,41 @@ class Student{
     public void setPassword(String Password){
         if(Password.length() <= 8){
             System.out.println("Password Minimal 8 Karakter");
-            System.out.print("Password : ");
+            System.out.print("Masukkan Password Anda : ");
             Password = in.next(); 
             setPassword(Password);
         }else{
             this.Password = Password;
         }
     }
-    
-
     public void daftar(){
-        System.out.println("=== Daftar / Register ===");
-        System.out.print("Nama : ");
+        System.out.println("Kegiatan 1");
+        System.out.println("======== Daftar ========");
+        
+        System.out.print("Masukan Nama Anda : ");
         Mahasiswanama = in.nextLine();
         setMahasiswanama(Mahasiswanama);
 
-        System.out.print("Nim : ");
+        System.out.print("Masukkan Nim Anda : ");
         Mahasiswanim = in.next();
         setMahasiswanim(Mahasiswanim);
 
-        System.out.print("Password : ");
+        System.out.print("Masukkan Password Anda : ");
         Password = in.next();
         setPassword(Password);
+        System.out.println("===================================");
         System.out.print("\n");
-        
     }
 
     public void info(){
-        System.out.println("===================================\n");
-        System.out.println("Selamat " + getMahasiswanama() + " Anda Berhasil Mendaftar \n" );
-        System.out.println("Berikut Username Dan Password :");
+        System.out.println("=====================================================================");
+        System.out.println("Selamat " + getMahasiswanama() + " Anda Telah Berhasil Mendaftar \n" );
+        System.out.println("Berikut Username Dan Password Anda :");
         System.out.println("\nUsername : " + getMahasiswanim());
         System.out.println("Password : " + getPassword());  
+        System.out.println("=====================================================================");
     }
 }
-
-
     public class Students{
         public static void main(String[] args) {
             Student mhs = new Student();
