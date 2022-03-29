@@ -71,7 +71,7 @@ class Student{
 }
 
 
-    public class Students{
+public class Students{
         public static void main(String[] args) {
             Student mhs = new Student();
             mhs.daftar();
